@@ -1,0 +1,333 @@
+/* Import Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* CSS Variables */
+:root {
+  --bs-primary: #ce071e;
+  --bs-primary-dark: #8d0414;
+  --bs-secondary: #6c757d;
+  --bs-black: #111;
+  --bs-light: #F1F1F0;
+  --bs-dark: #212529;
+  --bs-gray: #9aa1a7;
+  --bs-gray-dark: #51565b;
+  
+  --heading-font: "Inter", Roboto, sans-serif;
+  --body-font: "Inter", Roboto, sans-serif;
+  --heading-color: var(--bs-dark);
+  --heading-line-height: 1.24;
+  
+  --custom-easing: cubic-bezier(.17,.67,.83,.67);
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.7;
+  color: #8f8f8f;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: var(--heading-line-height);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary-dark);
+  border-color: var(--bs-primary-dark);
+  color: white;
+}
+
+/* Hover Effects */
+.hvr-sweep-to-right {
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bs-primary-dark);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  transform: scaleX(1);
+}
+
+/* Zoom Effect */
+.zoom-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom-effect img {
+  transition: 0.6s ease-out;
+}
+
+.zoom-effect:hover img {
+  transform: scale(1.1);
+}
+
+/* Text Effects */
+.txt-fx {
+  overflow: hidden;
+  line-height: 1;
+}
+
+.txt-fx .word {
+  overflow: hidden;
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.txt-fx .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* Fade Right Animation */
+.txt-fx.fade-right .letter {
+  transform: translate3d(-50px, 0, 0);
+  opacity: 0;
+  transition: transform 0.6s cubic-bezier(.5, 0, .53, 1), opacity 0.6s cubic-bezier(.5, 0, .53, 1);
+}
+
+.swiper-slide-active .txt-fx.fade-right .letter,
+.aos-animate .txt-fx.fade-right .letter {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* Slide Up Animation */
+.txt-fx.slide-up .letter {
+  transform: translate3d(0, 1.2em, 0);
+  transition: transform 0.9s cubic-bezier(.5, 0, .53, 1);
+}
+
+.swiper-slide-active .txt-fx.slide-up .letter,
+.aos-animate .txt-fx.slide-up .letter {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.33rem;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+}
+
+/* Product Card Styles */
+.product-card {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card .cart-concern {
+  right: 50%;
+  bottom: 70px;
+  left: 50%;
+  opacity: 0;
+  z-index: 9;
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+  transform: translateX(50%);
+}
+
+.product-card:hover .cart-concern {
+  bottom: 85px;
+  opacity: 1;
+}
+
+.cart-button .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 1;
+  transition: transform 0.3s ease-out;
+}
+
+.cart-button .btn:hover {
+  transform: translate3d(0, -0.3rem, 0);
+}
+
+/* Search Box */
+.search-box {
+  background: white;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.search-box.active {
+  height: 90px;
+}
+
+/* Swiper Customization */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--bs-gray);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--bs-primary);
+}
+
+/* Hero Section */
+.hero-slide {
+  position: relative;
+}
+
+.hero-content h1 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .txt-fx .letter {
+    transform: translate3d(0, 0, 0) !important;
+    opacity: 1 !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem !important;
+  }
+  
+  .display-1 {
+    font-size: 3rem !important;
+  }
+  
+  .display-3 {
+    font-size: 2.5rem !important;
+  }
+  
+  .display-4 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .section-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-primary-dark);
+}
+
+/* Loading Animation */
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  backdrop-filter: blur(5px);
+}
+
+/* Form Styles */
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(206, 7, 30, 0.25);
+}
+
+/* Utility Classes */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-hover:hover {
+  color: var(--bs-primary) !important;
+}
+
+/* Animation Delays for Text Effects */
+.txt-fx .letter:nth-child(1) { transition-delay: 0ms; }
+.txt-fx .letter:nth-child(2) { transition-delay: 50ms; }
+.txt-fx .letter:nth-child(3) { transition-delay: 100ms; }
+.txt-fx .letter:nth-child(4) { transition-delay: 150ms; }
+.txt-fx .letter:nth-child(5) { transition-delay: 200ms; }
+.txt-fx .letter:nth-child(6) { transition-delay: 250ms; }
+.txt-fx .letter:nth-child(7) { transition-delay: 300ms; }
+.txt-fx .letter:nth-child(8) { transition-delay: 350ms; }
+.txt-fx .letter:nth-child(9) { transition-delay: 400ms; }
+.txt-fx .letter:nth-child(10) { transition-delay: 450ms; }
