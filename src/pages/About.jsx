@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Users, Cpu, Zap, Award, TrendingUp, MessageCircle, CircleCheck as CheckCircle, Target, Lightbulb, Settings } from 'lucide-react'
+import { Users, Cpu, Zap, Award, TrendingUp, MessageCircle, CheckCircle, Target, Lightbulb, Settings } from 'lucide-react'
 import ContactModal from '../components/ContactModal'
 
 const About = () => {

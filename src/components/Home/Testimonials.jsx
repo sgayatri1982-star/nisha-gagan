@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import { Star, Quote } from 'lucide-react'
 import { fetchTestimonials } from '../../lib/supabase'
