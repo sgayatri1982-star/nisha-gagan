@@ -41,7 +41,7 @@ const HeroSection = () => {
       title: "Welcome to ModernShop",
       subtitle: "Discover Amazing Products",
       description: "Experience the best in quality, design, and innovation with our curated collection of premium products.",
-      image: "https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      image: "https://i.postimg.cc/d3pKy1Kt/Yellow-and-Purple-Pixelated-Group-Project-Presentation.png",
       button_text: "Shop Now",
       button_link: "#products"
     },
