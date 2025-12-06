@@ -99,7 +99,7 @@ const DiscountCoupon = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="coupon-code bg-white bg-opacity-20 rounded p-3 mb-3">
+                    <div className="coupon-code bg-grey bg-opacity-20 rounded p-3 mb-3">
                       <div className="d-flex align-items-center justify-content-center">
                         <Tag size={20} className="me-2" />
                         <strong>{coupon.coupon_code}</strong>
