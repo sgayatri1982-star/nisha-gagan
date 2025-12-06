@@ -50,7 +50,7 @@ const HeroSection = () => {
       title: "Premium Quality Products",
       subtitle: "Crafted with Excellence",
       description: "Every product is carefully selected and tested to ensure the highest standards of quality and durability.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      image: "https://i.postimg.cc/k501KbVC/Yellow-and-Purple-Pixelated-Group-Project-Presentation-(1).png",
       button_text: "Learn More",
       button_link: "/about"
     },
