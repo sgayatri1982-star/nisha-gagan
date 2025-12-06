@@ -59,7 +59,7 @@ const HeroSection = () => {
       title: "Innovation Meets Design",
       subtitle: "Future-Ready Solutions",
       description: "Stay ahead with our cutting-edge products that combine innovative technology with stunning design.",
-      image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+      image: "https://i.postimg.cc/k501KbVC/Yellow-and-Purple-Pixelated-Group-Project-Presentation-(1).png",
       button_text: "Explore",
       button_link: "#featured"
     }
