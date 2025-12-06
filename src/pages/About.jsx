@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Users, Cpu, Zap, Award, TrendingUp, MessageCircle, CheckCircle, Target, Lightbulb, Settings } from 'lucide-react'
 import ContactModal from '../components/ContactModal'
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Link } from 'react-router-dom'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import { ArrowRight, Play } from 'lucide-react'
 import { fetchHeroSlides } from '../../lib/supabase'
@@ -120,13 +121,23 @@ const HeroSection = () => {
                         {slide.description}
                       </p>
                       <div className="hero-buttons" data-aos="fade-up" data-aos-delay="600">
-                        <a 
-                          href={slide.button_link || '#'} 
-                          className="btn btn-primary btn-lg me-3"
-                        >
-                          {slide.button_text || 'Get Started'}
-                          <ArrowRight className="ms-2" size={20} />
-                        </a>
+                        {slide.button_link === '#products' ? (
+                          <Link 
+                            to="/products" 
+                            className="btn btn-primary btn-lg me-3"
+                          >
+                            {slide.button_text || 'Get Started'}
+                            <ArrowRight className="ms-2" size={20} />
+                          </Link>
+                        ) : (
+                          <a 
+                            href={slide.button_link || '#'} 
+                            className="btn btn-primary btn-lg me-3"
+                          >
+                            {slide.button_text || 'Get Started'}
+                            <ArrowRight className="ms-2" size={20} />
+                          </a>
+                        )}
                         <button className="btn btn-outline-light btn-lg">
                           <Play className="me-2" size={20} />
                           Watch Demo

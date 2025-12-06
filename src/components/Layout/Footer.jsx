@@ -42,10 +42,10 @@ const Footer = () => {
                 <Link to="/about">About Us</Link>
               </li>
               <li className="mb-2">
-                <Link to="/contact">Contact</Link>
+                <Link to="/products">Products</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Products</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -54,16 +54,16 @@ const Footer = () => {
             <h5>Services</h5>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#">Product Design</a>
+                <Link to="/product-design">Product Design</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Manufacturing</a>
+                <Link to="/manufacturing">Manufacturing</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Quality Control</a>
+                <Link to="/quality-control">Quality Control</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Customer Support</a>
+                <Link to="/customer-support">Customer Support</Link>
               </li>
             </ul>
           </div>

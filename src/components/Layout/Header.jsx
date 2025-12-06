@@ -32,6 +32,9 @@ const Header = () => {
               <Link className={isActive('/')} to="/">Home</Link>
             </li>
             <li className="nav-item">
+              <Link className={isActive('/products')} to="/products">Products</Link>
+            </li>
+            <li className="nav-item">
               <Link className={isActive('/about')} to="/about">About</Link>
             </li>
             <li className="nav-item">
